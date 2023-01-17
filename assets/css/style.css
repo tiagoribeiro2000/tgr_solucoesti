@@ -1,18 +1,19 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 /*Area Cabecalho e menu*/
 header{
-    height: 127px;
+    height: 100px;
     background-color: #1a558d;
 }
 .header{   
    display: flex; 
    align-items: center;
    max-width: 1140px;
-   height: 127px;
+   height: 100px;
    margin: auto;
    color: #fff;
 }
@@ -55,19 +56,72 @@ display: flex;
 }
 
 .banner{
-height: 400px;   
-background-color: rgb(44, 44, 44);
-background-image: url('../imagens/JaponesaAlienWare.png');
-background-size: cover;
-color: #fff;
-}
+    
+        height: calc(100vh - 100px);
+        background-color:#333;
+        background-image: url('../imagens/imagembanner1.jpg');
+        background-size: cover;
+        background-position: bottom;
+        overflow: hidden;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .banner_titulo{
+        width: 450px;
+        color: #fff;
+    }
+    .banner2{
+    
+        height: calc(100vh - 100px);
+        background-color:#333;
+        background-image: url('../imagens/defycity.jpg');
+        background-size: cover;
+        background-position: bottom;
+        overflow: hidden;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+       
+    }
 
-.titulo_banner{
-    background-color: #fff;
+   .banner2 div{
+    color: black;
+   }
+
+   .banner3{
+    
+    height: calc(100vh - 100px);
+    background-color:#333;
+    background-image: url('../imagens/MI5.jpg');
+    background-size: cover;
+    background-position: bottom;
+    overflow: hidden;
     display: flex;
-    width: 50%;
+    justify-content: flex-start;
+    align-items: center;
+   
+}
+.banner3 .banner_titulo{
+    color: black;
+}
+.banner4{
+    
+    height: calc(100vh - 100px);
+    background-color:#333;
+    background-image: url('../imagens/XI4.jpg');
+    background-size: cover;
+    background-position: bottom;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+   
 }
 
+.banner4 .banner_titulo{
+    color: black;
+}
 
 
 
