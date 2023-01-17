@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*Area Cabecalho e menu*/
+header{
+    height: 127px;
+    background-color: #1a558d;
+}
+.header{   
+   display: flex; 
+   align-items: center;
+   max-width: 1140px;
+   height: 127px;
+   margin: auto;
+   color: #fff;
+}
+.logo_header{
+width: 200px;
+
+
+}
+.logo_hd{
+    width: 150px;
+    height: 84px;
+    background-color: black;
+}
+.menu{
+flex: 1;
+display: flex;
+
+}
+.menu ul,
+.menu li{
+    list-style: none;
+}
+.menu ul{
+    display: flex;
+}
+.menu li a{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    padding-left: 5px;
+    padding-right: 5px;
+    height: 100px;
+}
+
+.menu li a:hover,
+.menu .active a{
+    border-bottom: 3px solid rgb(3, 251, 24);
+    color: rgb(255, 163, 16);
+}
+
+.banner{
+height: 400px;   
+background-color: rgb(44, 44, 44);
+background-image: url('../imagens/JaponesaAlienWare.png');
+background-size: cover;
+color: #fff;
+}
+
+.titulo_banner{
+    background-color: #fff;
+    display: flex;
+    width: 50%;
+}
+
+
+
+
+
+
