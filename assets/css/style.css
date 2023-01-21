@@ -5,125 +5,112 @@
 }
 
 /*Area Cabecalho e menu*/
+
 header{
-    height: 100px;
-    background-color: #1a558d;
+    display: flex;
+    justify-content: center;
+    height: 120px;
+    background-color:  #1a558d;
 }
-.header{   
-   display: flex; 
-   align-items: center;
-   max-width: 1140px;
-   height: 100px;
-   margin: auto;
-   color: #fff;
+.container{
+    display: flex;
+    justify-content: space-between;
+    width: 990px;
+    
 }
-.logo_header{
-width: 200px;
-
-
-}
-.logo_hd{
-    width: 150px;
-    height: 84px;
-    background-color: black;
+.logo{
+    display: flex;
+    align-items: center;
 }
 .menu{
-flex: 1;
-display: flex;
-
-}
-.menu ul,
-.menu li{
-    list-style: none;
-}
-.menu ul{
     display: flex;
+    align-items: center;
 }
-.menu li a{
-    color: #fff;
-    text-transform: uppercase;
-    font-weight: bold;
+nav ul, nav li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul{
+    display: flex;
+    
+}
+nav a{
+    display: block;
+    padding: 15px;
     text-decoration: none;
-    padding-left: 5px;
-    padding-right: 5px;
-    height: 100px;
+    text-transform: uppercase;
+    color: #fff;
+}
+nav .active a,
+nav a:hover{
+background-color: #f8b303;
+color: #fff;
 }
 
-.menu li a:hover,
-.menu .active a{
-    border-bottom: 3px solid rgb(3, 251, 24);
-    color: rgb(255, 163, 16);
-}
+
+/*banner abaixo do cabecalho*/
 
 .banner{
-    
-        height: calc(100vh - 100px);
-        background-color:#333;
-        background-image: url('../imagens/imagembanner1.jpg');
-        background-size: cover;
-        background-position: bottom;
-        overflow: hidden;
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-    }
-    .banner_titulo{
-        width: 450px;
-        color: #fff;
-    }
-    .banner2{
-    
-        height: calc(100vh - 100px);
-        background-color:#333;
-        background-image: url('../imagens/defycity.jpg');
-        background-size: cover;
-        background-position: bottom;
-        overflow: hidden;
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-       
-    }
-
-   .banner2 div{
-    color: black;
-   }
-
-   .banner3{
-    
-    height: calc(100vh - 100px);
-    background-color:#333;
-    background-image: url('../imagens/MI5.jpg');
+    height: calc(100vh - 120px);
+    background-image: url(../imagens/imagembanner1.jpg);
+    background-color: rgb(73, 72, 72);
     background-size: cover;
-    background-position: bottom;
-    overflow: hidden;
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
-   
-}
-.banner3 .banner_titulo{
-    color: black;
-}
-.banner4{
-    
-    height: calc(100vh - 100px);
-    background-color:#333;
-    background-image: url('../imagens/XI4.jpg');
-    background-size: cover;
-    background-position: bottom;
-    overflow: hidden;
-    display: flex;
+    flex-direction: row;
     justify-content: flex-end;
+}
+.banner .text_area{
+    display: flex;
+    justify-items: center;
+    width: 50%;
+}
+.text_area h1{
+    display: flex;
     align-items: center;
+    color: #fff;
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif
+}
+
+
+
+/*Products*/
+
+
+.products{
+    height: 350px;
+    display: flex;
    
 }
-
-.banner4 .banner_titulo{
-    color: black;
+.product1,
+.product2,
+.product3{
+    flex: 1;
+    color: #fff;
+    
+}
+.img_efeito1{
+    background-color:rgba(0, 0, 0, 0.5);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.product1{
+background-image: url(../imagens/desktop_alienware.jpg);
+width: 100%;
 }
 
 
 
+.product2{
+    background-image: url(../imagens/notebook_alienware.jpg);
+    width: 100%;
+}
+.product3{
+    background-image: url(../imagens/acessorios_alienware.jpg);
+    width: 100%;
+}
 
 
