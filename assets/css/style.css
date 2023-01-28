@@ -73,8 +73,54 @@ color: #fff;
     font-family: 'Times New Roman', Times, serif
 }
 
+.setup_dos_sonhos{
+    height: calc(100vh - 120px);
+    background-image: url(../imagens/setup_dos_sonhos.jpg);
+    background-color: rgb(73, 72, 72);
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    color: #fff;
+    align-items: center;
+    word-spacing: 0.90;
+    padding: 10px;
+}
+.setup_dos_sonhos .text_area .button{
+    
+    width: 110px;
+    padding: 5px;
+    margin-top: 20px;
+    border:  solid rgb(83, 82, 82) 4px;
+    font-size: 20px;
+}
+.setup_dos_sonhos p{
+    margin-top: 10px;
+    line-height: 20px;
+    font-size: 20px;
+}
+.m15{
+    height: calc(100vh - 120px);
+    background-image: url(../imagens/desktop_m15.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+}
+.m15 .text_area h1{
+    color: rgba(83, 82, 82);
+}
 
-
+.m15 .text_area .button{
+    
+    width: 110px;
+    padding: 5px;
+    margin-top: 20px;
+    border:  solid rgb(83, 82, 82) 4px;
+    font-size: 20px;
+}
 /*Products*/
 
 
@@ -93,7 +139,7 @@ color: #fff;
 .img_efeito1{
     background-color:rgba(0, 0, 0, 0.5);
     height: 100%;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
 }
@@ -101,9 +147,6 @@ color: #fff;
 background-image: url(../imagens/desktop_alienware.jpg);
 width: 100%;
 }
-
-
-
 .product2{
     background-image: url(../imagens/notebook_alienware.jpg);
     width: 100%;
@@ -111,6 +154,50 @@ width: 100%;
 .product3{
     background-image: url(../imagens/acessorios_alienware.jpg);
     width: 100%;
+}
+
+.product1:hover  .img_efeito1{
+    display: flex;
+}
+.product2:hover  .img_efeito1{
+    display: flex;
+}
+.product3:hover  .img_efeito1{
+    display: flex;
+}
+
+
+/*video card section*/
+.titulo_nvidia{
+    color: #fff;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+}
+.placa_de_videos{
+    
+   display: flex;
+   flex-wrap: wrap;
+   background-color: rgb(8, 8, 8);
+   justify-content: center;
+}
+.placa_de_videos div{
+background-color: #f8b303;
+ margin: 10px;   
+ width: 750px;
+ height: 421px;
+ color: #fff;
+}
+footer{
+    height: 200px;
+    background-color: #1a558f;
+    display: flex;
+    align-items: center;
+}
+footer .copy_right{
+   font-size: 20px;
+   color: #fff;
 }
 
 
